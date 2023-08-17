@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio site</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
+
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <!-- nav bar -->
+        <nav class="bg-dark">
+            <!-- nav menu -->
+            <div>
+                <h1 id="portfolio">MY PORTFOLIO</h1>
+            </div>
+            <!-- nav icons start -->
+            <div class="nav-icons">
+                <!-- nav menu start -->
+                <div class="nav-menu">
+                    <span id="short-line-menu-one"></span>
+                    <span></span>
+                    <div id="menu-design">
+                        <span id="dot-menu-alt"></span>
+                        <span id="short-line-menu"></span>
+                    </div>
+                </div>
+                <!-- nav menu ends -->
+            </div>
+            <!-- nav icons end -->
+        </nav>
+        <div id="about-loction"></div>
+        <!-- nav menu items start -->
+        <div class="nav-menu-items"></div>
+        <div id="menu-links">
+            <div class="nav-menu-links">
+                <button style="--i: 1" id="home-btn">Home</button>
+                <button style="--i: 2" id="about-btn">About Me</button>
+                <button style="--i: 3" id="service-btn">Services</button>
+                <button style="--i: 4" id="cv-btn">CV</button>
+                <button style="--i: 5" id="newsletter-btn">Newsletter</button>
+                <button style="--i: 6" id="contact-btn">Contact</button>
+            </div>
+        </div>
+        <!-- nav menu items start -->
+    </header>
+    <br>
+    <br>
+
+    <!-- my contents -->
+    <section id="about-section">
+        <div id="section-contents">
+            <div id="about-me">
+                <h2 id="welcome-heading" class="text-light">Hi! I AM PRINCEWILL BALEMBA</h2>
+                <br>
+                <p class="text-light">you are welcome to my site,</p>
+                <h3>I am a frontend developer and a youtuber, check my CV bellow to learn more about me</h3>
+            </div>
+            <div>
+                <img id="my-picture" src="./pictures/princewill.JPG" alt="princewill">
+            </div>
+        </div>
+        <!-- cookies -->
+        <div id="cookies"></div>
+        <br>
+        <br>
+    </section>
+    <br>
+    <!-- about me (my cv) -->
+    <div>
+        <a id="cv" href="" class="text-decoration-none">
+            <h3>&RightTriangle; MY CV</h3>
+            <span>i am a frontend developer since 2021, i started my developement training in techritoma inc (a software
+                company in cameroon/buea)
+                in the year 2018, i have uptain the following certificate and also have experience in..
+                <button id="learn-more">Learn more</button>
+            </span>
+        </a>
+    </div>
+    <br>
+    <br>
+    <!-- footer -->
+
+    <!-- services -->
+    <div id="services">
+        <h2>&RightTriangle; SERVICES</h2>
+        <div id="service-btns">
+            <a href="web.html" class="text-decoration-none">
+                <h3>Web developement</h3>
+                <br>
+                <span>I build websites of all category including e-commerce for business, institution web, etc</span>
+            </a>
+            <a href="app.html" class="text-decoration-none">
+                <h3>App developement</h3>
+                <br>
+                <span>I build applications for business including andriod and ios applications</span>
+            </a>
+            <a href="cloud.html" class="text-decoration-none">
+                <h3 id="cloudDepl">Cloud deployement</h3>
+                <br>
+                <span>I build websites of all category including e-commerce for business, institution web, etc</span>
+            </a>
+        </div>
+    </div>
+    <br>
+    <footer>
+        <!-- NEWSLETTER -->
+        <div class="container shadow-lg mb-5 bg-dark rounded">
+            <div id="newsletter" class="text-center bg-dark">
+                <p>Welcome to my newsletter, subscribe to know the latest event about me</p>
+                <br>
+                <br>
+                <form action="">
+                    <div id="errorEl"></div>
+                    <div id="input-el">
+                        <div class="mb-3">
+                            <input type="text" class="form-control input-sm" id="input-text" placeholder="Enter name">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-2">
+                            <input type="email" class="form-control" id="input" placeholder="Enter Email">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                    </div>
+                    <button id="subscribe-btn" class="rounded bg-danger text-light">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <br>
+        <div id="foot-link" id="newsletter-section" class="bg-dark">
+            <p>Useful links</p>
+            <a href="#about-loction" class="text-decoration-none">&RightTriangle; Home</a>
+            <a href="#about-loction" class="text-decoration-none">&RightTriangle; About me</a>
+            <a href="#learn-more" class="text-decoration-none">Services</a>
+            <a href="#cookies" class="text-decoration-none">&RightTriangle; CV</a>
+            <a href="#cloudDepl" class="text-decoration-none">Newsletter</a>
+            <a href="" class="text-decoration-none">&RightTriangle; Contact</a>
+
+            <br>
+            <div id="location">
+                <p>MY LOCATOIN</p>
+                <a href="https://goo.gl/maps/9mPQ736ubtsiLv6M6" class="text-decoration-none">&RightTriangle; SW
+                    REGION/BUEA-MOLYKO</a>
+                <a href="https://goo.gl/maps/9mPQ736ubtsiLv6M6" class="text-decoration-none">
+                    <img id="map" src="./pictures/sate buea review.png" alt="map">
+                </a>
+            </div>
+            <div id="email">
+                <a href="mailto:infoprincewill@gmail.com" class="text-decoration-none">infoprincewill@gmail.com</a>
+                <a href="mailto:pricewillbalemba@gmail.com" class="text-decoration-none">pricewillbalemba@gmail.com</a>
+            </div>
+            <br>
+
+            <div id="copy" class="text-light bg-dark">
+                <span>copyright &copy; 2023 @Princewill's workspace, all right reserve</span>
+            </div>
+    </footer>
+</body>
+
+</html>
